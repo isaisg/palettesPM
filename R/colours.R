@@ -37,3 +37,27 @@ pm.colors.genotypes <- function(...) {
         return( setNames(cols, genotypes) )
 }
 
+#' @export
+scale_fill_genotype <- function(..., na.value = "grey") {
+	ggplot2::scale_fill_manual(..., values = pm.colors.genotypes(), na.value = na.value)
+}
+
+#' @export
+scale_color_genotype <- function(..., na.value = "grey") {
+        ggplot2::scale_color_manual(..., values = pm.colors.genotypes(), na.value = na.value)
+}
+
+
+#' @export
+scale_fill_fraction <- function(..., na.value = "grey") {
+        ggplot2::scale_fill_manual(..., values = pm.colors.fractions(), na.value = na.value)
+}
+
+#' @export
+scale_color_fraction <- function(..., na.value = "grey") {
+        ggplot2::scale_color_manual(..., values = pm.colors.fractions(), na.value = na.value)
+}
+
+
+
+
