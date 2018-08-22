@@ -37,6 +37,29 @@ pm.colors.genotypes <- function(...) {
         return( setNames(cols, genotypes) )
 }
 
+#' Get the list of Genotypes used so far
+#' @return a vector of the canonical names of the genotypes
+#' @export
+pm.names.phyla <- function(...) {
+        phyla <- c("Acidobacteria","Actinobacteria","Bacteroidetes","Chloroflexi","Cyanobacteria",
+	"Firmicutes","Gemmatimonadetes","Patescibacteria","Proteobacteria","Verrucomicrobia","Other")
+        return(phyla)
+}
+
+
+#' Canonical colour scheme for the Arabidopsis thaliana Geontypes
+#' @param ... ignored
+#' @return a named, vector of hex colors, indexed by Genotype names
+#' @export
+pm.colors.phyla <- function(...) {
+        phyla <- pm.names.phyla()
+        cols <- c("#41F0AC",,"#0000C0","#FFFF00","#008000",
+                  "#BCFFEE","#B856D7","#FF0D00","#8B4513","#FF8000","##8D8DFF","#000000")
+        return( setNames(cols, phyla) )
+}
+
+
+
 #' @export
 scale_fill_genotype <- function(..., na.value = "grey") {
 	ggplot2::scale_fill_manual(..., values = pm.colors.genotypes(), na.value = na.value)

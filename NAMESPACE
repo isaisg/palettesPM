@@ -2,8 +2,10 @@
 
 export(pm.colors.fractions)
 export(pm.colors.genotypes)
+export(pm.colors.phyla)
 export(pm.names.fractions)
 export(pm.names.genotypes)
+export(pm.names.phyla)
 export(scale_color_fraction)
 export(scale_color_genotype)
 export(scale_fill_fraction)
