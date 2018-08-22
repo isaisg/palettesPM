@@ -53,7 +53,7 @@ pm.names.phyla <- function(...) {
 #' @export
 pm.colors.phyla <- function(...) {
         phyla <- pm.names.phyla()
-        cols <- c("#41F0AC",,"#0000C0","#FFFF00","#008000",
+        cols <- c("#41F0AC","#0000C0","#FFFF00","#008000",
                   "#BCFFEE","#B856D7","#FF0D00","#8B4513","#FF8000","##8D8DFF","#000000")
         return( setNames(cols, phyla) )
 }
@@ -82,5 +82,13 @@ scale_color_fraction <- function(..., na.value = "grey") {
 }
 
 
+#' @export
+scale_fill_phyla <- function(..., na.value = "grey") {
+        ggplot2::scale_fill_manual(..., values = pm.colors.phyla(), na.value = na.value)
+}
 
+#' @export
+scale_color_phyla <- function(..., na.value = "grey") {
+        ggplot2::scale_color_manual(..., values = pm.colors.phyla(), na.value = na.value)
+}
 
