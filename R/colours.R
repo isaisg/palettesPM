@@ -54,7 +54,7 @@ pm.names.phyla <- function(...) {
 pm.colors.phyla <- function(...) {
         phyla <- pm.names.phyla()
         cols <- c("#41F0AC","#0000C0","#FFFF00","#008000",
-                  "#BCFFEE","#B856D7","#FF0D00","#8B4513","#FF8000","##8D8DFF","#000000")
+                  "#BCFFEE","#B856D7","#FF0D00","#8B4513","#FF8000","#8D8DFF","#000000")
         return( setNames(cols, phyla) )
 }
 
