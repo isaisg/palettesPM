@@ -13,7 +13,7 @@ pm.names.fractions <- function(...) {
 #' @export
 pm.colors.fractions <- function(...) {
 	fractions <- pm.names.fractions()
-	cols <- c("black","#DAA520","#7CFC00","#EE82EE","#0000EE","#00A0F0","#00A000","#F00000","#595959")
+	cols <- c("black","#DAA520","#7CFC00","#EE82EE","#0000EE","#00A0F0","#B27612","#29AB5C","#7D17CC")
 	return( setNames(cols, fractions) )
 }
 
