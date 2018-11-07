@@ -3,7 +3,7 @@
 #' @return a vector of the canonical names of the fractions
 #' @export
 pm.names.fractions <- function(...) {
-	fractions <- c("Agar","BulkSoil","EC","Inoculum","Rhizosphere","Root","Sand","Shoot","Soil")
+	fractions <- c("AgarPlant","AgarNoPlant","BulkSoil","EC","Inoculum","Rhizosphere","Root","Sand","Shoot","Soil")
 	return(fractions)
 }
 
@@ -13,7 +13,7 @@ pm.names.fractions <- function(...) {
 #' @export
 pm.colors.fractions <- function(...) {
 	fractions <- pm.names.fractions()
-	cols <- c("black","#DAA520","#7CFC00","#EE82EE","#0000EE","#B27612","#7D17CC","#29AB5C","#7D17CC")
+	cols <- c("#E8A6FF","#74537F","#DAA520","#7CFC00","#EE82EE","#0000EE","#B27612","#7D17CC","#29AB5C","#7D17CC")
 	return( setNames(cols, fractions) )
 }
 
