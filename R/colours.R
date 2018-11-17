@@ -1,5 +1,5 @@
 
-#' Get the list of fractions samples acrros several experiments
+#' Get the list of fractions samples acrros several experiments.
 #' @return a vector of the canonical names of the fractions
 #' @export
 pm.names.fractions <- function(...) {
